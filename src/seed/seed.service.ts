@@ -21,7 +21,7 @@ export class SeedService {
     data.results.forEach(async ({ name, url }) => {
       const segments = url.split('/');
       const pokemonNumber = +segments[segments.length - 2];
-      pokemonsToInsert.push({ name: name.toUpperCase(), pokemonNumber });
+      pokemonsToInsert.push({ name: name.toLocaleLowerCase(), pokemonNumber });
     });
     try {
 
