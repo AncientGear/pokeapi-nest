@@ -41,20 +41,17 @@ o también, seegun sea el caso
 docker compose up -d
 ```
 
-5. Reconstruir la base de datos
+5. Crear archivo de configuración .env
+Clonar el archivo __.env.template__ y renombrar la copia a .env
+
+6. Llenar las variables de enterono definidas en __.env__
+
+7. Reconstruir la base de datos
 ```
 URL:3000/api/v2/seed
 ```
 
-6. Crear archivo de configuración .env
-Basarse en el archivo example.env para verificar los archivos de configuración necesarios
-Nota: Se tiene por defecto valores
-```
-MONGO: mongodb://localhost:27017/nest-pokemon
-Puerto: 3000
-```
-
-## Correr app
+8. Correr app
 Para desarrollo:
 ```
 yarn run start:dev
