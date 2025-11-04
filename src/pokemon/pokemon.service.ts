@@ -32,10 +32,11 @@ export class PokemonService {
   }
 
   async findAll(params: PaginationDto) {
-    const { limit = 10, offset = 0, sort = 1 } = params;
+    const { limit = 10, offset = 1, sort = 1 } = params;
+    const skip = offset > 0 ? (offset - 1) * limit : 0;
     return await this.pokemonModel.find()
     .limit(limit)
-    .skip(offset)
+    .skip(skip)
     .sort({ pokemonNumber: sort });
   }
 

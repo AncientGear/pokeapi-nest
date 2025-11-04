@@ -13,7 +13,6 @@ export class PaginationDto {
 
     @IsOptional()
     @IsNumber()
-    @IsPositive()
     @Min(0)
     @Type(() => Number)
     readonly offset?: number;
