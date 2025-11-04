@@ -41,6 +41,11 @@ o también, seegun sea el caso
 docker compose up -d
 ```
 
+5. Reconstruir la base de datos
+```
+URL:3000/api/v2/seed
+```
+
 ## Stack Usado
 * MongoDB
 * Nest
