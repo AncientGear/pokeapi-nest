@@ -46,6 +46,25 @@ docker compose up -d
 URL:3000/api/v2/seed
 ```
 
+6. Crear archivo de configuración .env
+Basarse en el archivo example.env para verificar los archivos de configuración necesarios
+Nota: Se tiene por defecto valores
+```
+MONGO: mongodb://localhost:27017/nest-pokemon
+Puerto: 3000
+```
+
+## Correr app
+Para desarrollo:
+```
+yarn run start:dev
+```
+
+Para producción:
+```
+yarn run build
+yarn run start:prod
+```
 ## Stack Usado
 * MongoDB
 * Nest
